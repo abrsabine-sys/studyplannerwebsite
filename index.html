@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner | Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Study Planner</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#planner">Planner</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h2>Plan Your Study Time. Ace Your Classes.</h2>
+      <p>Organize your study sessions and stay on track.</p>
+      <button id="scrollToPlanner">Add Study Session</button>
+    </section>
+
+    <section id="about">
+      <article>
+        <h2>About the study planner</h2>
+        <p>
+          This study planner is a simply designed to help students
+          manage their time effectively and reduce stress.
+        </p>
+      </article>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Add and manage study sessions</li>
+        <li>Organize by subject</li>
+        <li>Instant visual feedback</li>
+      </ul>
+    </section>
+
+    <section id="planner">
+      <h2>Study Planner</h2>
+
+      <form id="plannerForm">
+        <input type="text" id="subject" placeholder="Subject" required />
+        <input type="date" id="date" required />
+        <input type="number" id="hours" placeholder="Hours" required />
+        <button type="submit">Add Session</button>
+      </form>
+
+      <ul id="sessionList"></ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="contactResponse"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Study Planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

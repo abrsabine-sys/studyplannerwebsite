@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4a6cf7;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.hero button {
+  padding: 0.7rem 1.5rem;
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+#plannerForm {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#plannerForm input,
+#plannerForm button {
+  padding: 0.5rem;
+}
+
+#sessionList {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#sessionList li {
+  background-color: white;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid #4a6cf7;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #plannerForm {
+    flex-direction: column;
+  }
+}
